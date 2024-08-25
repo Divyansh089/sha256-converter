@@ -1,70 +1,37 @@
 # sha256-converter# Getting Started with Create React App
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Here's a description you can use for your GitHub repository:
 
-## Available Scripts
+## SHA-256 Converter
+This project is a simple yet powerful SHA-256 converter built with Node.js and Express. It provides two main functionalities:
 
-In the project directory, you can run:
+### 1.Hash Conversion: Convert a given name to its SHA-256 hash. The converted hash is then stored in a JSON file on the backend for future reference.
 
-### `npm start`
+### 2.Hash Lookup: Check if a given name or hash exists in the stored JSON file. You can either enter a name to retrieve its hash or input a hash to find the corresponding name.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+## Features
+Secure Hashing: Utilizes SHA-256 hashing algorithm for converting names.
+Data Storage: Stores hashed names in a JSON file on the backend.
+Lookup Functionality: Allows users to search for names or hashes to verify if they exist in the stored data.
+## Getting Started
+#### 1.Clone the repository: git clone https://github.com/yourusername/sha256-converter.git
+#### 2.Navigate to the project directory: cd sha256-converter
+#### 3.Install dependencies: npm install
+#### 4.Start the server: npm start
+## Usage
+Convert Name to Hash: Send a POST request to /convert with a JSON payload containing the name.
+Check Hash: Send a GET request to /check with a query parameter name or hash.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+Feel free to contribute by opening issues or submitting pull requests. Your feedback and suggestions are welcome!
 
-### `npm test`
+License
+This project is licensed under the MIT License - see the LICENSE file for details.
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+Feel free to customize this description based on any additional features or specifics of your project!
 
-### `npm run build`
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
 
-### `npm run eject`
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
